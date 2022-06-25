@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,200;1,400&display=swap');
+
+:root {
+    --green: #36ccae;
+    --dark: #1b1b1b;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    background: var(--green);
+    background: linear-gradient(20deg, var(--dark), var(--green));
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1050px;
+    width: 100%;
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35));
+    padding: 30px 92px;
+    border-radius: 20px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.80);
+
+}
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.content .image-box{
+    max-width: 55%;
+}
+
+.content .image-box img{
+    width: 100%;
+}
+
+
+.container .topic {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(111, 233, 176);
+}
+
+.content form {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.content .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+
+.content .input-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    background: rgb(152, 211, 183);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.content .input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #636c72;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.content .input-box input:focus, 
+.content .input-box input:valid{
+    border-color: rgb(9, 170, 92);
+    background-color: rgb(179, 230, 205);
+}
+
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label {
+    top: -9px;
+    left: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.content .message-box {
+    min-height: 100px;
+    position: relative;
+}
+
+.content .message-box textarea:focus{
+    border-color: rgb(9, 170, 92);
+    background-color: rgb(179, 230, 205);
+}
+.content .message-box textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background: rgb(152, 211, 183);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.content .message-box label {
+    position: absolute;
+    font-size: 16px;
+    color:#636c72;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.content .message-box textarea:focus ~ label {
+    left: 12px;
+    top: -17px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.content .input-box input[type="submit"]{
+    color: #fff;
+    background: rgb(61, 161, 114);
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.content .input-box input[type="submit"]:hover{
+    background-color: rgb(152, 211, 183);
+}
+
+@media (max-width:1200px) {
+    .content .image-box{
+        display: none;
+    }
+    .content form {
+        width: 100%;
+        margin-left: 30px;
+    }
+}
