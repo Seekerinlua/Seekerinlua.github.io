@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skontaktuj sie z nami!</title>
-    <link rel="stylesheet" href="kscr.css">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css">
     <link rel="shortcut icon" href="./images/Aron123.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
     <nav class="sidebar close">
@@ -88,38 +88,44 @@
     </nav>
     <script src="script.js"></script>
 
-    <div class="container">
-        <div class="content">
-            <div class="image-box">
-                <img src="./images/@.png" alt="">
+    <section id="blog">
+
+        <div class="blog-heading">
+            <span>Moje ostatnie posty</span>
+            <h3>Moj Blog</h3>
+        </div>
+
+        <div class="blog-container">
+            <div class="blog-box">
+
+                <div class="blog-img">
+                    <img src="./images/blog1.png" alt="blog">
+                </div>
+
+
+                <div class="blog-text">
+                    <span>26 czerwiec 2022 / Zrobienie designu strony</span>
+                    <a href="#">Co sie stalo z designem strony?</a>
+                    <p>Design strony moze sie zmienic, ale narazie ma on efekt szkla...</p>
+                    <a href="#">Read more</a>
+                </div>
             </div>
-        <form 
-            action="https://formsubmit.co/wojteks710@gmail.com"
-            method="POST"
-            >
-            <div class="topic">Wyslij mi wiadomosc</div>
-            <div class="input-box">
-                <input type="text" name="name" class="form-control" required>
-                <label class="form-label">Wpisz swoje imię/nazwę</label>
-            </div>
-            <div class="input-box">
-                <input type="email" name = "email" class="form-control" required>
-                <label class="form-label">Wpisz swoj email</label>
-            </div>
-            <div class="message-box">
-                <textarea 
-                    name="message"
-                    class="form-control"
-                    required
-                ></textarea>
-                <label>Wpisz swoja wiadomosc</label>
-            </div>
-            <div class="input-box">
-                <input type="submit" value="Wyślij Wiadomość">
-            </div>
-        </form>
-    </div>
-    </div>
-    <script src="script.js"></script>
+            <div class="blog-box">
+
+                <div class="blog-img">
+                    <img src="./images/blog1.png" alt="blog">
+                </div>
+
+
+                <div class="blog-text">
+                    <span>26 czerwiec 2022 / Zapisy na kurs</span>
+                    <a href="#">Chcesz nauczyc sie programowac?</a>
+                    <p>wystarczy ze wejdziesz na strone glowna</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>         
+        </div>
+
+    </section>
 </body>
 </html>
